@@ -32,10 +32,12 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 913);
+            this.ClientSize = new System.Drawing.Size(952, 919);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WOOW";
             this.ResumeLayout(false);
 
