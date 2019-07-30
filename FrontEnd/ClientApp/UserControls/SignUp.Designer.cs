@@ -33,19 +33,22 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            this.tetNickName = new DevExpress.XtraEditors.TextEdit();
+            this.tetEmail = new DevExpress.XtraEditors.TextEdit();
+            this.tetVerificationCode = new DevExpress.XtraEditors.TextEdit();
+            this.tetPassword = new DevExpress.XtraEditors.TextEdit();
+            this.tetPasswordCheck = new DevExpress.XtraEditors.TextEdit();
+            this.btnVerificationCodeRequest = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNext = new DevExpress.XtraEditors.SimpleButton();
+            this.lbcCheckName = new DevExpress.XtraEditors.LabelControl();
+            this.lbcPassword = new DevExpress.XtraEditors.LabelControl();
+            this.lbcPasswordCheck = new DevExpress.XtraEditors.LabelControl();
+            this.lbcVerificationCode = new DevExpress.XtraEditors.LabelControl();
+            ((System.ComponentModel.ISupportInitialize)(this.tetNickName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetVerificationCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetPassword.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetPasswordCheck.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -98,87 +101,130 @@
             this.labelControl5.TabIndex = 0;
             this.labelControl5.Text = "인증번호";
             // 
-            // textEdit1
+            // tetNickName
             // 
-            this.textEdit1.Location = new System.Drawing.Point(110, 15);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(159, 36);
-            this.textEdit1.TabIndex = 0;
+            this.tetNickName.Location = new System.Drawing.Point(110, 15);
+            this.tetNickName.Name = "tetNickName";
+            this.tetNickName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.tetNickName.Properties.Appearance.Options.UseFont = true;
+            this.tetNickName.Size = new System.Drawing.Size(159, 36);
+            this.tetNickName.TabIndex = 0;
+            this.tetNickName.Leave += new System.EventHandler(this.TetNickName_Leave);
             // 
-            // textEdit2
+            // tetEmail
             // 
-            this.textEdit2.Location = new System.Drawing.Point(110, 75);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(159, 36);
-            this.textEdit2.TabIndex = 2;
+            this.tetEmail.Location = new System.Drawing.Point(110, 75);
+            this.tetEmail.Name = "tetEmail";
+            this.tetEmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.tetEmail.Properties.Appearance.Options.UseFont = true;
+            this.tetEmail.Size = new System.Drawing.Size(159, 36);
+            this.tetEmail.TabIndex = 2;
             // 
-            // textEdit3
+            // tetVerificationCode
             // 
-            this.textEdit3.Location = new System.Drawing.Point(110, 135);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Size = new System.Drawing.Size(159, 36);
-            this.textEdit3.TabIndex = 4;
+            this.tetVerificationCode.Location = new System.Drawing.Point(110, 135);
+            this.tetVerificationCode.Name = "tetVerificationCode";
+            this.tetVerificationCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.tetVerificationCode.Properties.Appearance.Options.UseFont = true;
+            this.tetVerificationCode.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.tetVerificationCode.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.tetVerificationCode.Size = new System.Drawing.Size(159, 36);
+            this.tetVerificationCode.TabIndex = 4;
+            this.tetVerificationCode.Leave += new System.EventHandler(this.TetVerificationCode_Leave);
             // 
-            // textEdit4
+            // tetPassword
             // 
-            this.textEdit4.Location = new System.Drawing.Point(110, 195);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(159, 36);
-            this.textEdit4.TabIndex = 5;
+            this.tetPassword.Location = new System.Drawing.Point(110, 195);
+            this.tetPassword.Name = "tetPassword";
+            this.tetPassword.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.tetPassword.Properties.Appearance.Options.UseFont = true;
+            this.tetPassword.Properties.PasswordChar = '*';
+            this.tetPassword.Size = new System.Drawing.Size(159, 36);
+            this.tetPassword.TabIndex = 5;
+            this.tetPassword.Leave += new System.EventHandler(this.TetPassword_Leave);
             // 
-            // textEdit5
+            // tetPasswordCheck
             // 
-            this.textEdit5.Location = new System.Drawing.Point(110, 255);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(159, 36);
-            this.textEdit5.TabIndex = 6;
+            this.tetPasswordCheck.Location = new System.Drawing.Point(110, 255);
+            this.tetPasswordCheck.Name = "tetPasswordCheck";
+            this.tetPasswordCheck.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.tetPasswordCheck.Properties.Appearance.Options.UseFont = true;
+            this.tetPasswordCheck.Properties.PasswordChar = '*';
+            this.tetPasswordCheck.Size = new System.Drawing.Size(159, 36);
+            this.tetPasswordCheck.TabIndex = 6;
+            this.tetPasswordCheck.Leave += new System.EventHandler(this.TetPasswordCheck_Leave);
             // 
-            // simpleButton1
+            // btnVerificationCodeRequest
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(275, 18);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(76, 29);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "중복 확인";
+            this.btnVerificationCodeRequest.Location = new System.Drawing.Point(275, 78);
+            this.btnVerificationCodeRequest.Name = "btnVerificationCodeRequest";
+            this.btnVerificationCodeRequest.Size = new System.Drawing.Size(93, 29);
+            this.btnVerificationCodeRequest.TabIndex = 3;
+            this.btnVerificationCodeRequest.Text = "인증번호 요청";
+            this.btnVerificationCodeRequest.Click += new System.EventHandler(this.BtnVerificationCodeRequest_Click);
             // 
-            // simpleButton2
+            // btnNext
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(275, 78);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(93, 29);
-            this.simpleButton2.TabIndex = 3;
-            this.simpleButton2.Text = "인증번호 요청";
+            this.btnNext.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.btnNext.Appearance.Options.UseFont = true;
+            this.btnNext.Location = new System.Drawing.Point(516, 310);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(78, 45);
+            this.btnNext.TabIndex = 7;
+            this.btnNext.Text = "다음";
+            this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
-            // simpleButton3
+            // lbcCheckName
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(522, 355);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(86, 59);
-            this.simpleButton3.TabIndex = 7;
-            this.simpleButton3.Text = "다음";
+            this.lbcCheckName.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lbcCheckName.Appearance.Options.UseForeColor = true;
+            this.lbcCheckName.Location = new System.Drawing.Point(275, 28);
+            this.lbcCheckName.Name = "lbcCheckName";
+            this.lbcCheckName.Size = new System.Drawing.Size(0, 18);
+            this.lbcCheckName.TabIndex = 8;
+            // 
+            // lbcPassword
+            // 
+            this.lbcPassword.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lbcPassword.Appearance.Options.UseForeColor = true;
+            this.lbcPassword.Location = new System.Drawing.Point(275, 208);
+            this.lbcPassword.Name = "lbcPassword";
+            this.lbcPassword.Size = new System.Drawing.Size(0, 18);
+            this.lbcPassword.TabIndex = 9;
+            // 
+            // lbcPasswordCheck
+            // 
+            this.lbcPasswordCheck.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lbcPasswordCheck.Appearance.Options.UseForeColor = true;
+            this.lbcPasswordCheck.Location = new System.Drawing.Point(275, 268);
+            this.lbcPasswordCheck.Name = "lbcPasswordCheck";
+            this.lbcPasswordCheck.Size = new System.Drawing.Size(0, 18);
+            this.lbcPasswordCheck.TabIndex = 10;
+            // 
+            // lbcVerificationCode
+            // 
+            this.lbcVerificationCode.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lbcVerificationCode.Appearance.Options.UseForeColor = true;
+            this.lbcVerificationCode.Location = new System.Drawing.Point(275, 148);
+            this.lbcVerificationCode.Name = "lbcVerificationCode";
+            this.lbcVerificationCode.Size = new System.Drawing.Size(0, 18);
+            this.lbcVerificationCode.TabIndex = 11;
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.simpleButton3);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.textEdit5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.lbcVerificationCode);
+            this.Controls.Add(this.lbcPasswordCheck);
+            this.Controls.Add(this.lbcPassword);
+            this.Controls.Add(this.lbcCheckName);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnVerificationCodeRequest);
+            this.Controls.Add(this.tetPasswordCheck);
+            this.Controls.Add(this.tetPassword);
+            this.Controls.Add(this.tetVerificationCode);
+            this.Controls.Add(this.tetEmail);
+            this.Controls.Add(this.tetNickName);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl3);
@@ -186,11 +232,11 @@
             this.Controls.Add(this.labelControl1);
             this.Name = "SignUp";
             this.Size = new System.Drawing.Size(701, 472);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetNickName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetVerificationCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetPassword.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tetPasswordCheck.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,13 +249,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.TextEdit tetNickName;
+        private DevExpress.XtraEditors.TextEdit tetEmail;
+        private DevExpress.XtraEditors.TextEdit tetVerificationCode;
+        private DevExpress.XtraEditors.TextEdit tetPassword;
+        private DevExpress.XtraEditors.TextEdit tetPasswordCheck;
+        private DevExpress.XtraEditors.SimpleButton btnVerificationCodeRequest;
+        private DevExpress.XtraEditors.SimpleButton btnNext;
+        private DevExpress.XtraEditors.LabelControl lbcCheckName;
+        private DevExpress.XtraEditors.LabelControl lbcPassword;
+        private DevExpress.XtraEditors.LabelControl lbcPasswordCheck;
+        private DevExpress.XtraEditors.LabelControl lbcVerificationCode;
     }
 }

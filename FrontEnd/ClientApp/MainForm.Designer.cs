@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.signUp1 = new ClientApp.SignUp();
+            this.login1 = new ClientApp.UserControls.Login();
             this.SuspendLayout();
             // 
-            // signUp1
+            // login1
             // 
-            this.signUp1.Location = new System.Drawing.Point(12, 13);
-            this.signUp1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.signUp1.Name = "signUp1";
-            this.signUp1.Size = new System.Drawing.Size(669, 523);
-            this.signUp1.TabIndex = 0;
+            this.login1.Location = new System.Drawing.Point(12, 13);
+            this.login1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.login1.Name = "login1";
+            this.login1.Size = new System.Drawing.Size(601, 498);
+            this.login1.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 919);
-            this.Controls.Add(this.signUp1);
+            this.Controls.Add(this.login1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -55,7 +55,7 @@
 
         #endregion
 
-        private SignUp signUp1;
+        private UserControls.Login login1;
     }
 }
 

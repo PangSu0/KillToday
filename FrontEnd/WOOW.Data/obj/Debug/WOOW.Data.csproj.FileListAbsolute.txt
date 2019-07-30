@@ -1,0 +1,12 @@
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\WOOW.Data.dll.config
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\WOOW.Data.dll
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\WOOW.Data.pdb
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\EntityFramework.dll
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\EntityFramework.xml
+D:\WOOW\FrontEnd\WOOW.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\WOOW\FrontEnd\WOOW.Data\obj\Debug\WOOW.Data.csprojAssemblyReference.cache
+D:\WOOW\FrontEnd\WOOW.Data\obj\Debug\WOOW.Data.csproj.CoreCompileInputs.cache
+D:\WOOW\FrontEnd\WOOW.Data\obj\Debug\WOOW.Data.csproj.CopyComplete
+D:\WOOW\FrontEnd\WOOW.Data\obj\Debug\WOOW.Data.dll
+D:\WOOW\FrontEnd\WOOW.Data\obj\Debug\WOOW.Data.pdb

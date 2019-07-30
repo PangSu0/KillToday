@@ -1,0 +1,15 @@
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\EntityFramework.dll
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.dll
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\WOOW.Data.dll
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\WOOW.Data.pdb
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\WOOW.Data.dll.config
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\EntityFramework.xml
+D:\WOOW\FrontEnd\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.xml
+D:\WOOW\FrontEnd\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+D:\WOOW\FrontEnd\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\WOOW\FrontEnd\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+D:\WOOW\FrontEnd\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\WOOW\FrontEnd\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

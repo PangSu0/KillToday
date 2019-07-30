@@ -91,3 +91,11 @@ D:\WOOW\FrontEnd\ClientApp\bin\Debug\ja\DevExpress.Office.v19.1.Core.resources.d
 D:\WOOW\FrontEnd\ClientApp\bin\Debug\ru\DevExpress.Office.v19.1.Core.resources.dll
 D:\WOOW\FrontEnd\ClientApp\obj\Debug\ClientApp.SignUp.resources
 D:\WOOW\FrontEnd\ClientApp\obj\Debug\ClientApp.exe.licenses
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\WOOW.Data.dll
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\EntityFramework.dll
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\WOOW.Data.pdb
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\WOOW.Data.dll.config
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\EntityFramework.xml
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\WOOW\FrontEnd\ClientApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\WOOW\FrontEnd\ClientApp\obj\Debug\ClientApp.UserControls.Login.resources
